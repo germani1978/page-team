@@ -1,0 +1,78 @@
+html{
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+img{
+    width:200px
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contenedor-titulo{
+    margin-top: 20px;
+    display: flex;
+}
+.contenedor-titulo h2{
+    display:inline-block;
+    margin-right: 350px;
+}
+
+.descripcion-titulo{
+    display: inline-block;
+    width: 30%;
+}
+.contenedor-foto{
+    width: 230px;
+    margin: 0;
+    display:inline-block;
+}
+.contenedor-foto img{
+    width:200px;
+    margin: 0;
+}
+
+.texto-vertical p{
+  transform-origin: 0 0;
+  transform: rotate(90deg) translateX(-340px) translateY(-220px);
+  margin: 0;
+}
+
+.espaciovacio{
+    height: 100px;
+    width: 230px;
+    margin: 0;
+}
+
+.contenedor-fotos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 50px;
+}
+
+footer p {
+    text-align: center;
+    color:gainsboro
+}
+
+@media (max-width:720px) {
+
+    .contenedor-titulo{
+        display: block;
+        margin: 20px;
+    }
+
+    .contenedor-fotos{
+    grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
